@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>FUTBOL</title>
     <style>
         body {
@@ -11,10 +12,101 @@
         * {
             box-sizing:border-box;
         }
-        
+        body {
+        width: 1280px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;;
+      }
+      
+      header,
+      nav,
+      footer {
+        background-color: #001233;
+        color: white;
+        border: 2px solid white;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        gap: 0;
+      }
+      header,
+      nav,
+      footer {
+        width: 1280px;
+      }
+      header {
+        height: 152.797px;
+        justify-content: space-evenly;
+      }
+      nav {
+        height: 76.3906px;
+        justify-content: space-around;
+        background-color: #0353a4;
+        gap: 0;
+      }
+      main {
+        width: 640px;
+        height: 450px;
+        flex-direction: column;
+        gap: 1px; 
+        color: #001233;
+        border: 2px solid #0353a4;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+      }
+      aside {
+        width: 630px;
+        height: 450px;   ;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        border: 2px solid #0353a4;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        height: 76.3906px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+        font-weight: 400;
+        font-style:normal;
+        font-size: 20px;
+        color: white;
+      }
+.t1 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.t2{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    font-weight: 400;
+    font-style:normal;
+    font-size: 30px;
+    color:#001233;
+    text-align: center;
+}
+.t3 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    color:#001233;
+    align-items: center;
+
+}
         .imagenfondo {
             margin:0%;
-            height: 1000px;
+            height: 450px;
+            width: 635px;
             background-image: url("Nueva\ cancha.JPG");
             background-position: center;
             background-repeat: no-repeat;
@@ -26,7 +118,6 @@
             font-weight: bolder;
             color: black;
             text-align: center;
-            
         }
         .mengao {
             height: auto;
@@ -60,7 +151,7 @@
         .seleccion {
             height: auto;
             width:500px;
-            background-image: url("selecciones.jpeg");
+            background-image: url("colombia.png");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -71,24 +162,84 @@
             color: white ;
             text-align: center;
         }
-        
+        .tabla {
+            border: 2px solid black;
+            text-align: center;          
+        }
     </style>
 </head>
 <body>
-    <div class="imagenfondo">
-    <h4 class="tfutbol">MIS EQUIPOS FAVORITOS</h4>
-    <ul>
-       <div class="mengao">
-        <li class="textof">FLAMENGO</li>
+    <header>
+        <img src="balon.jpeg" alt="balon" width="145px" height="145px" />
+        <h1 class="t1"> VICTOR ALDEMAR TORRES RODRIGUEZ </h1>
+        <h2 class="t1">FUTBOL</h2>
+    </header>
+    <nav>
+        <a style="color: white;" href="index.html">HOME</a>
+        <a style="color: white;" href="viajes.html">VACACIONES</a>
+        <a style="color: white;" href="http://github.com/Aldemar8322?tab=repositories">GITHUB</a>
+    </nav>
+    <main>
+        <div class="imagenfondo">
+            <h4 class="tfutbol">MIS EQUIPOS FAVORITOS</h4>
+            <ul>
+               <div class="mengao">
+                <li class="textof">FLAMENGO</li>
+            </div>
+            <div class="millos">
+                <li class="textom">MILLONARIOS</li>
+            </div>
+            <div class="seleccion">
+                <li class="textos">COLOMBIA</li>
+            </div>
+            </ul>
+            </div>
+    </main>
+    <aside>
+        <div class="estadio">
+        <H4 class="tfutbol">COPA LIBERTADORES 2024</H4>
+       <table class="tabla">
+        <thead>
+            <tr>
+                <th class="tabla">POSICION</th>
+                <th class="tabla">EQUIPO</th>
+                <th class="tabla">CIUDAD</th>
+                <th class="tabla">PUNTAJE</th>
+        </thead>
+        <tbody>
+            <tr class="tabla">
+                <td>1</td>
+                <td>FLAMENGO</td>
+                <td>RIO DE JANEIRO</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>MILLONARIOS</td>
+                <td>BOGOTA</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>BOLIVAR</td>
+                <td>LA PAZ</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>PALESTINO</td>
+                <td>SANTIAGO DE CHILE</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+       </table>
     </div>
-    <div class="millos">
-        <li class="textom">MILLONARIOS</li>
-    </div>
-    <div class="seleccion">
-        <li class="textos">COLOMBIA Y BRASIL</li>
-    </div>
-    </ul>
-    </div>
-
+    </aside>
 </body>
+<footer>
+    <div>"Hasta que no hayas amado a un animal una parte de tu alma permanecerá dormida. <small>Anatole France</small> " .</div>
+    <span class="material-symbols-outlined">
+      pets
+      </span>
+</footer>
 </html>
